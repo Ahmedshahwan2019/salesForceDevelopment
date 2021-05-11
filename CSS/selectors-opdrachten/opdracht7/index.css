@@ -1,0 +1,27 @@
+/*class selector*/
+.section{
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+/*type selectors */
+span{
+    color :red
+}
+/*descendant selectors*/
+div p {
+    color :lightyellow
+}
+
+/*child selector */
+section > p{
+    font-size: 18px;
+    font-style: italic;
+} 
+/*general selector*/
+div ~ code {
+   background-color: darkviolet;
+}
+/* adjacent selector*/
+code + p {
+    color : blue
+}

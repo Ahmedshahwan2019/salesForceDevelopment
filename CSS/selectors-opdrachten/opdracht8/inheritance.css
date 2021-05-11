@@ -1,0 +1,22 @@
+/*
+vanaf hoogste prioriteit te laag prioriteit seletor
+
+-inline style 
+- id
+-calsses
+-type selector
+- unversail selector ( *{} ) 
+
+*/
+
+
+#testID{
+    color:red
+}
+.testClass{
+    color: yellow
+}
+
+p{
+    color: hotpink;
+}
