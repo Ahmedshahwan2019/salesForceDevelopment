@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdract 13</title>
+</head>
+<body>
+    <h1>TranslatedMonth</h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translatedMonth()">translate</button>
+    <div id="translatedMonth"></div>
+
+
+    <script>
+        function translatedMonth(){
+
+        const inputNumber = document.querySelector("#number").value
+        let display = document.querySelector("#translatedMonth")
+
+        // if(inputNumber < 1 || inputNumber >12){
+        //     console.log('test');
+        //     display.textContent='Invalid Input , Please enter only numbers from 1  to 12'
+        //     return false;
+        // }
+
+        switch (Number(inputNumber)) {
+            case 1:
+                monthName = "it is January."
+                
+                break;
+
+                case 2:
+                monthName = "it is February."
+                
+                break;
+
+                case 3:
+                monthName = " it is March.."
+                
+                break;
+
+                case 4:
+                monthName = "it is April.."
+                
+                break;
+
+                case 5:
+                monthName = "it is May."
+                
+                break;
+
+                case 6:
+                monthName = "it is June."
+                
+                break;
+
+                case 7:
+                monthName = "it is January."
+                
+                break;
+
+                case 8:
+                monthName = "it is January."
+                
+                break;
+
+                case 9:
+                monthName = "it is January."
+                
+                break;
+                case 10:
+                monthName = "it is January."
+                
+                break;
+                case 11:
+                monthName = "it is January."
+                
+                break;
+                case 12:
+                monthName = "it is January."
+                
+                break;  
+            default: monthName = 'Invalid Input , Please enter only numbers from 1  to 12'
+                break;
+        }
+        display.textContent = monthName;
+    }
+    </script>
+</body>
+</html>

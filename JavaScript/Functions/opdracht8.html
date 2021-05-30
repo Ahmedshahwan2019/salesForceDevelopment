@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div id="main">
+
+            <div id="wiskunde">
+             <table>
+             <thead>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Willem</td>
+                        <td><input id="willem" class="cijfer" type="number" value="3" size="20" oninput="calc()"></td>
+                    </tr>
+                    <tr>
+                        <td>Jan</td>
+                        <td><input id="jan" class="cijfer" type="number" value="7" size="20"></td>
+                 </tr>
+                 <tr>
+                    <td>Kim Sing</td>
+                    <td><input id="simSing" class="cijfer" type="number" value="10" size="20"></td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td><input id="samantha" class="cijfer" type="number" value="4" size="20"></td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td><input id="joyce" class="cijfer" type="number" value="5.5" size="20"></td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td><input id="willem" class="cijfer" type="number" value="1" size="20"></td>
+                </tr>
+                </tbody>
+             </table>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script>
+        function calc() {
+            
+        
+        let result = document.querySelectorAll('input')
+        
+        result.forEach(inputVal => {
+            let output =inputVal.attributes.value.value
+            console.log(Number(output));
+            if(Number(output) < 5.5 ){
+                console.log("trst " +output);
+               inputVal.style.backgroundColor="#f54748"
+            }else if (Number(output) >= 5.5 && Number(output) < 7.5 ){
+                inputVal.style.backgroundColor="#9fe6a0" 
+            }else if(Number(output) >= 7.5 ){
+                inputVal.style.backgroundColor="#064420" 
+            }
+            
+        });
+ 
+    }
+    calc()
+    </script>
+</body>
+</html>

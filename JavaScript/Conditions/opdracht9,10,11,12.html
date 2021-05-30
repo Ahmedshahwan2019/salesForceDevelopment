@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht</title>
+</head>
+<body>
+<input type="number" name="number" id="number">
+<button id="btn" onclick="checkNumber()">Button</button>
+<div>
+    <span id="label"></span>
+</div>
+
+<script>
+   
+    function checkNumber(){
+        const inputNumber = document.querySelector("#number").value
+        const dispaly = document.querySelector("#label")
+
+        if (inputNumber > 5 && inputNumber < 10){
+            dispaly.textContent=`Het ingevoerde getal is tussen 5 en 10.`
+        }else if(inputNumber == 13 || inputNumber > 13 && inputNumber == 20 || inputNumber < 20){
+            dispaly.textContent=`Het ingevoerde getal is gelijk aan 11 of groter dan 11 en is gelijk aan 20 of kleiner dan 20.`
+        }else if(inputNumber==21 || inputNumber == 23){
+            dispaly.textContent=`“Het ingevoerde getal is gelijk aan 21 of is gelijk aan 23.`
+        }else if(inputNumber > 30 && inputNumber < 35 || inputNumber > 40 && inputNumber < 45){
+            dispaly.textContent=`het getal is tussen 30 en 35 of het getal is tussen 40 en 45.`
+        }
+    }
+</script>
+</body>
+</html>

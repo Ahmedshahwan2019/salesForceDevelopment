@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht 1</title>
+</head>
+<body>
+    <p id="amswer"></p>
+    <p id="output"></p>
+    <button onclick="answer()">click</button>
+
+ <script>
+
+  
+const names = ['John', 'Olly', 'Mo', 'Hendrik', 'Tony', 'Irus', 'Jan', 'Peter']
+const getRandomName = names[Math.round(Math.random() * names.length -1)] 
+    document.getElementById('output').innerHTML=getRandomName
+
+     function answer() {
+
+         const ww = document.getElementById('output').value
+         console.log(ww);
+     }
+       
+//greeting function
+     function greeting() {
+         console.log("hello world")
+     }
+     greeting()
+// print text input out fucntion
+
+     function printText(input) {
+         console.log(input)
+     }
+     printText("you can write your favourite thing here")
+
+//print Number input out fucntion
+
+function printNumbers(input) {
+    console.log(input)
+}
+printNumbers(1)
+
+//multiply numbers
+
+function multiply(number1 , number2) {
+    console.log(number1 * number2);
+    return number1 * number2
+}
+multiply(4,5)
+
+// bekende naam function
+
+function checkName(name) {
+    
+    if(name =="John" || name =="Olly" || name =="Mo" || name =="Hendrik" || name=="Tony"){
+        return "Dit is een bekende van ons:"+ name.charAt(0).toUpperCase() + name.slice(1) 
+    }else{
+        return name.charAt(0).toUpperCase() + name.slice(1) + " Onbekend in ons systeem!"
+    }
+}
+console.log(checkName('ahmed'))
+console.log(checkName('John'))
+
+
+ </script>
+
+
+</body>
+</html>

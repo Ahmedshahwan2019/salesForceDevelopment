@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdract 13</title>
+</head>
+<body>
+    <h1>TranslatedMonth</h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translatedMonth()">translate</button>
+    <div id="translatedMonth"></div>
+
+
+    <script>
+        function translatedMonth(){
+
+        const inputNumber = document.querySelector("#number").value
+        let display = document.querySelector("#translatedMonth")
+
+        if(inputNumber < 1 || inputNumber >12){
+            console.log('test');
+            display.textContent='Invalid Input , Please enter only numbers from 1  to 12'
+            return false;
+        }
+
+        if(inputNumber == 1){
+            display.textContent=" it is January."
+        } else if(inputNumber == 2){
+            display.textContent=" it is February."
+        }else if(inputNumber == 3){
+            display.textContent=" it is March."
+        }else if(inputNumber == 4){
+            display.textContent=" it is April."
+        }else if(inputNumber == 5){
+            display.textContent=" it is May."
+        }else if(inputNumber == 6){
+            display.textContent=" it is June."
+        }else if(inputNumber == 7){
+            display.textContent=" it is Juli."
+        }else if(inputNumber == 8){
+            display.textContent=" it is August."
+        }else if(inputNumber == 9){
+            display.textContent=" it is September."
+        }else if(inputNumber ==10){
+            display.textContent=" it is Oktober."
+        }else if(inputNumber == 11){
+            display.textContent=" it is Novemebr."
+        }else if(inputNumber == 12){
+            display.textContent=" it is December."
+        }
+    }
+    </script>
+</body>
+</html>

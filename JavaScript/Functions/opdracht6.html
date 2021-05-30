@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="answer"></p>
+    <p id="showName"></p>
+    <button onclick="checkName()">click to check</button>
+
+
+    <script>
+        const names = ['John', 'Olly', 'Mo', 'Hendrik', 'Tony', 'Irus', 'Jan', 'Peter']
+        let getRandomName = names[Math.round(Math.random() * names.length)] 
+        let nameDisplayed = document.getElementById("showName").innerHTML=getRandomName;
+        let result = document.getElementById("answer")
+
+        function checkName  () {
+            let knownNames = ['John', 'Olly', 'Mo', 'Hendrik', 'Tony']
+            let Isname = knownNames.includes(nameDisplayed)
+            console.log(Isname);
+            if(Isname){
+                result.textContent= "Dit is een bekende van ons"
+            }else {
+                result.textContent= "Onbekend in ons systeem!"
+            }
+        }
+
+
+    </script>
+
+
+</body>
+</html>
